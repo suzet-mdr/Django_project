@@ -182,7 +182,7 @@ def register_page(request):
                 messages.info(request, "Account created sucessfully")
                 return redirect('/login')
             else:
-                message.error(request,'Passwords Donot Match')
+                messages.error(request,'Passwords Donot Match')
         except Exception as e:
             messages.error(request,f'error : {e}')
 
