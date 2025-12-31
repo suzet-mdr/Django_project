@@ -86,6 +86,8 @@ DATABASES = {
         	'NAME' : 'Django_store',	#db name
         	'USER' : 'Django',	#login name 
         	'PASSWORD' : 'django', 	#login password
+            'HOST': 'localhost',
+            'PORT': '5432',
     		}
 	}
 
@@ -145,7 +147,7 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "rushalmanandhar@gmail.com" 
+EMAIL_HOST_USER = "sujitmanandhar@gmail.com" 
 EMAIL_HOST_PASSWORD = "" 
 
 ESEWA_ENV = "production"  # Change to "production" when deploying
